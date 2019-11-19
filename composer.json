@@ -1,0 +1,26 @@
+{
+  "name": "stev/barcode-bundle",
+  "description": "Symfony 4 bundle for tecnickcom/tc-lib-barcode",
+  "type": "symfony-bundle",
+  "require": {
+    "php": "^7.1",
+    "tecnickcom/tc-lib-barcode": "^1.15"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stefan Matei",
+      "email": "stefan@nimasoftware.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Stev\\BarcodeBundle\\": ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    }
+  }
+}
