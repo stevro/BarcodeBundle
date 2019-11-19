@@ -5,7 +5,7 @@
  * For details contact contact@nimasoftware.com
  */
 
-namespace Intima\CommonBundle\DependencyInjection;
+namespace Stev\BarcodeBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
