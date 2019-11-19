@@ -11,11 +11,11 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 
 /**
- * Description of IntimaCommonExtension
+ * Description of StevBarcodeExtension
  *
  * @author stefan
  */
-class IntimaCommonExtension extends Extension implements \Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface
+class StevBarcodeExtension extends Extension implements \Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface
 {
 
     public function prepend(ContainerBuilder $container)
