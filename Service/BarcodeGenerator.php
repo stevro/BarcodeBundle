@@ -6,9 +6,9 @@
 
 namespace Stev\BarcodeBundle\Service;
 
-class Barcode
+class BarcodeGenerator
 {
-    public function generate()
+    public function generateHtml(string $data)
     {
         // instantiate the barcode class
         $barcode = new \Com\Tecnick\Barcode\Barcode();
@@ -16,7 +16,7 @@ class Barcode
         // generate a barcode
         $bobj = $barcode->getBarcodeObj(
             'QRCODE,H',                     // barcode type and additional comma-separated parameters
-            'https://tecnick.com',          // data string to encode
+            $data,          // data string to encode
             -4,                             // bar width (use absolute or negative value as multiplication factor)
             -4,                             // bar height (use absolute or negative value as multiplication factor)
             'black',                        // foreground color
@@ -24,6 +24,8 @@ class Barcode
         )->setBackgroundColor('white'); // background color
 
         // output the barcode as HTML div (see other output formats in the documentation and examples)
-        $bobj->getHtmlDiv();
+        $html = $bobj->getHtmlDiv();
+
+        return $html;
     }
 }
