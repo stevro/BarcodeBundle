@@ -4,6 +4,7 @@
  * For details contact contact@nimasoftware.com
  */
 
+namespace Stev\BarcodeBundle\Service;
 
 class Barcode
 {
